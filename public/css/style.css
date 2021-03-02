@@ -1,0 +1,251 @@
+
+img{
+    max-width:100%;
+}
+a{
+    text-decoration: none;
+}
+
+/*============
+header
+=============*/
+
+header{
+    position: relative;
+}
+header .logo {
+    width:70px;
+}
+header h1{
+    color: #e4017e;
+    font-size: 5.7vw;
+    top: 0;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+}
+
+/*============
+nav
+=============*/
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 300px;
+  background: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: all .5s;
+  z-index: 3;
+  opacity: 0;
+}
+.open nav {
+  left: 0;
+  opacity: 1;
+}
+nav .inner {
+  padding: 25px;
+}
+nav .inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .inner ul li {
+  position: relative;
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+nav .inner ul li a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+nav .inner ul li a:hover {
+  background: #e4e4e4;
+}
+@media screen and (max-width: 767px) {
+  nav {
+    left: -220px;
+    width: 220px;
+  }
+}
+/*============
+.toggle_btn
+=============*/
+.toggle_btn {
+  display: block;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 3;
+}
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all .5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+.open .toggle_btn span {
+  background-color: #fff;
+}
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+  transform: translateY(10px) rotate(-315deg);
+}
+.open .toggle_btn span:nth-child(2) {
+  opacity: 0;
+}
+.open .toggle_btn span:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(315deg);
+  transform: translateY(-10px) rotate(315deg);
+}
+/*============
+#mask
+=============*/
+#mask {
+  display: none;
+  transition: all .5s;
+}
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+/*============
+body
+=============*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color:#333;
+}
+
+main h2{
+    margin:0;
+    font-size:18px;
+}
+
+.main-image{
+    margin-bottom:20px;
+}
+
+/*============
+menu-container 
+=============*/
+
+.menu-container {
+    margin: 0;
+  }
+  
+  .menu-container .menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-container .menu .menu-item {
+    flex: 1;
+  }
+  
+  .menu-container .menu .menu-item a {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-right: none;
+    color: #333;
+    display: block;
+    padding: 0.3em 0.2em;
+    font-size: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .menu-container .menu .menu-item:first-of-type a{
+    background-color: #f3aad2;
+    color: #ffffff;
+
+  }
+  .menu-container .menu .menu-item a:hover {
+    background: #ccc;
+    color: #ffffff;
+  }
+  
+  .menu-container .menu .menu-item:last-child a {
+    border-right: 1px solid #ccc;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-container .menu {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .menu-container .menu .menu-item {
+      flex: auto;
+      width: 33.33333333%;
+    }
+    .menu-container .menu .menu-item:nth-child(3n) a {
+      border-right: 1px solid #ccc;
+    }
+    .menu-container .menu .menu-item:nth-child(n + 4) a {
+      border-top: none;
+    }
+  }
+
+/*============
+main-menu
+=============*/
+.main-menu-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-menu {
+    width:33%;
+}
+
+.main-menu .image-wrap{
+    padding: 2%;
+    background-color: #fcfffc;
+    border: 1px solid #CCC;
+    margin: 3%;
+}
+.main-menu p{
+    text-align:center;
+    color: #e4017e;
+    margin:0;
+}
