@@ -249,3 +249,38 @@ main-menu
     color: #e4017e;
     margin:0;
 }
+
+
+a.btn {
+    color: #000;
+    margin: 10px auto;
+    display: block;
+    width: 30%;
+    text-align: center;
+    background-color: #017ee4;
+    border-bottom: 5px solid #014590;
+    padding: 10px;
+}
+/* mens */
+body.mens {
+    background-color:#333
+}
+body.mens header h1{
+    color: #017ee4;
+}
+body.mens .main-menu p{
+    color: #017ee4;
+}
+
+body.mens .main-menu .image-wrap{
+    background-color: #333;
+    border: 1px solid #333;
+}
+body.mens .toggle_btn span{
+    background-color:#FFF
+}
+body.mens a.btn {
+    color: #000;
+    background-color: #e4017e;
+    border-bottom: 5px solid #900145;
+}

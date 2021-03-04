@@ -16,4 +16,14 @@ $(function($) {
     $mask.on('click', function() {
       $nav.removeClass( open );
     });
+
+    $('#roleChange').click(function(){
+        if($("body").hasClass("mens")){
+            $("body").removeClass("mens");
+        } else {
+            $("body").addClass("mens");
+        }
+        return false;
+    });
+
 });
