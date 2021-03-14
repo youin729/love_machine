@@ -1,4 +1,10 @@
+html{
+}
 
+
+* {
+  box-sizing: border-box;
+}
 img{
     max-width:100%;
 }
@@ -17,6 +23,7 @@ header .logo {
     width:70px;
 }
 header h1{
+    margin:0;
     color: #e4017e;
     font-size: 5.7vw;
     top: 0;
@@ -84,8 +91,8 @@ nav .inner ul li a:hover {
 .toggle_btn {
   display: block;
   position: absolute;
-  top: 16px;
-  right: 24px;
+  top: 8px;
+  right: 18px;
   width: 30px;
   height: 30px;
   transition: all .5s;
@@ -153,6 +160,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color:#333;
+  margin: 0;
 }
 
 main h2{
@@ -252,24 +260,19 @@ main-menu
 
 
 a.btn {
-    color: #000;
+    color: #e4017e;
     margin: 10px auto;
     display: block;
-    width: 30%;
+    width: 70%;
     text-align: center;
-    background-color: #017ee4;
+    background-color: #333;
     border-bottom: 5px solid #014590;
     padding: 10px;
 }
 /* mens */
 body.mens {
-    background-color:#333
-}
-body.mens header h1{
-    color: #017ee4;
-}
-body.mens .main-menu p{
-    color: #017ee4;
+    background-color:#333;
+    color:#FFF;
 }
 
 body.mens .main-menu .image-wrap{
@@ -283,4 +286,67 @@ body.mens a.btn {
     color: #000;
     background-color: #e4017e;
     border-bottom: 5px solid #900145;
+}
+
+/*============
+steps
+=============*/
+.steps {
+  width: 100%;
+  margin: 30px 5px;
+  padding:0 10px;
+}
+.steps .step_img {
+  width: 120px;
+  position: relative;
+}
+.steps .step {
+  counter-increment: step-count;
+  margin: 0 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.steps .step_text {
+  align-self: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+.attentionList {
+  list-style: none;
+  max-width: 400px;
+  font-size: 14px;
+  font-size: 0.8rem;
+  margin: auto auto 32px;
+}
+.attentionList li::before {
+  content: "※";
+  margin: auto 4px auto -16px;
+}
+.budget li {
+  margin: auto auto 16px;
+  list-style: none;
+}
+
+.btn-primary {
+  background-color: #f3aad2;
+  width: 90%;
+  margin: 0 auto 20px;
+}
+
+.btn-line input{
+  color:#DDD;
+}
+.btn-primary a{
+  color:#FFF;
+  text-align:center;
+}
+
+.balloon-current {
+  background: #fff8e5;
+  border: solid 2px #f3aad2;
+  color: #f3aad2;
+}
+.inputGroup_label {
+  color: #f3aad2;
+
 }

@@ -20,8 +20,12 @@ $(function($) {
     $('#roleChange').click(function(){
         if($("body").hasClass("mens")){
             $("body").removeClass("mens");
+            $("#main_image").prop("src", "public/img/hack_main.jpg");
+            $("#roleChange").text("クレイジー休日ハック");
         } else {
             $("body").addClass("mens");
+            $("#main_image").prop("src", "public/img/hack_main_crazy.jpg");
+            $("#roleChange").text("ふつうの休日ハック");
         }
         return false;
     });
