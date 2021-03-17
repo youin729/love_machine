@@ -1,15 +1,27 @@
-html{
+html {
+  -webkit-text-size-adjust: 100%;
+  overflow-y: auto;
+  font-size: 62.5%;
 }
-
-
+body {
+  font-size: 1.4rem;
+}
 * {
   box-sizing: border-box;
 }
 img{
     max-width:100%;
 }
-a{
+a, a:link, a:hover, a:active, a:visited{
+    color:inherit;
     text-decoration: none;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+li{
+    list-style: none;
 }
 
 /*============
@@ -20,7 +32,7 @@ header{
     position: relative;
 }
 header .logo {
-    width:70px;
+    width:230px;
 }
 header h1{
     margin:0;
@@ -163,14 +175,28 @@ body {
   margin: 0;
 }
 
+main h1{
+  font-size:20px;
+}
+
 main h2{
     margin:0;
     font-size:18px;
 }
-
-.main-image{
-    margin-bottom:20px;
+.main-message{
+  padding:10px;
 }
+.notificationMessage{
+  text-align:center;
+  margin:10px 0;
+}
+.notificationMessage a{
+  color:#CC0000;
+  font-size:12px;
+  text-decoration:underline;
+}
+
+
 
 /*============
 menu-container 
@@ -288,6 +314,135 @@ body.mens a.btn {
     border-bottom: 5px solid #900145;
 }
 
+/*==============
+search
+================*/
+.search{
+  background-image: url(../img/background.jpg);
+  padding: 2rem 1.6rem 1rem;
+  background-position: 76% 63%;
+  background-size: cover;
+  
+}
+.search h2{
+  color:#FFF;
+  font-size:18px;
+  font-weight: bold;
+  text-align:center;
+  margin-bottom:10px;
+}
+.formConditions-item{
+  margin-bottom: 1.2rem;
+  width: 100%;
+  padding: 5px 10px;
+  height: 50px;
+  background: #fff;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;    
+  overflow: hidden;
+
+}
+.formConditions-item-icon{
+  margin-top: 11px;
+  margin-right: 10px;
+  vertical-align: top;
+  display: inline-block;
+}
+.formConditions-item-icon svg{
+  color: #555;
+  height: 16px;
+  width: 12px;
+}
+.formConditions-item-content{
+  display:inline-block;
+}
+.formConditions-item-label {
+  font-size: 1rem;
+  color: #555;
+}
+.formConditions-item-value{
+  display: block;
+  font-size: 1.4rem;
+  color: #555;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.commonButton {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  border: 0;
+  border-radius: 3px;
+  line-height: 1.2;
+  color: #fff;
+  cursor: point
+}
+.submitButton, .submitButton:link, .submitButton:visited{
+  background-color: #39c46e;
+  height: 50px;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+.contentBox{
+  padding: 2rem 1.6rem 0;
+}
+.commonHeadingBlack {
+  color: #1a1a1a;
+  font-size: 2.2rem;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom:10px;
+}
+.shortcutList{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.shortcutList-item{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right:1rem;
+}
+
+.commonBlueButtonTop {
+  display: block;
+  background: #fff;
+  padding: .7rem 1rem;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #003773;
+  text-align: center;
+}
+
+
 /*============
 steps
 =============*/
@@ -349,4 +504,32 @@ steps
 .inputGroup_label {
   color: #f3aad2;
 
+}
+
+.footer {
+  box-sizing: border-box;
+  background: #6b6f73;
+  padding: 64px 32px;
+  text-align: center;
+}
+.footer ul{
+  margin-bottom:30px;
+}
+.footer_navLink:not(:last-child) {
+  margin-right: 8px;
+}
+.footer_navLink {
+  font-size: 13px;
+  font-size: 1.3rem;
+  display: inline-block;
+}
+.footer_logo {
+  width: 300px;
+  margin: 0 auto 32px;
+}
+.footer_copyright {
+  color: #fff;
+}
+.footer_navLink a {
+  color:#FFF !important;
 }

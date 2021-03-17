@@ -17,6 +17,7 @@ $(function($) {
       $nav.removeClass( open );
     });
 
+    /*
     $('#roleChange').click(function(){
         if($("body").hasClass("mens")){
             $("body").removeClass("mens");
@@ -29,5 +30,6 @@ $(function($) {
         }
         return false;
     });
+    */
 
 });
