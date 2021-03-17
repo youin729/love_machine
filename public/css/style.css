@@ -481,11 +481,41 @@ steps
   margin: auto auto 16px;
   list-style: none;
 }
+.btn, .btn-s, .btn-l, .btn-xl, .btn-w, .btn-line, .btn-file, .btn-back {
+  border-radius: calc(40px / 2);
+  overflow: hidden;
+  background: #ccc;
+  vertical-align: top;
+  cursor: pointer;
+  box-sizing: border-box;
+  background: #ccc;
+  text-align:center;
+  transition: all 0.2s;
+}
+.btn-l input, .btn-l button, .btn-l a, .btn-l span, .btn-l label {
+  height: auto;
+  line-height: inherit;
+  font-size: 1.8rem;
+  letter-spacing: 0.25rem;
+  font-weight: 600;
+  padding: 12px 0;
+}
 
 .btn-primary {
   background-color: #f3aad2;
   width: 90%;
   margin: 0 auto 20px;
+}
+.btn-l.btn-back{
+  width: 70%;
+  height:auto;
+  margin: 0 auto 10px;
+  
+}
+.btn-back a{
+  color:#FFF;
+  font-size: 1.4rem;
+  padding: 5px 0;
 }
 
 .btn-line input{
@@ -503,7 +533,6 @@ steps
 }
 .inputGroup_label {
   color: #f3aad2;
-
 }
 
 .footer {

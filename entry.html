@@ -1,210 +1,108 @@
-<html><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-      <title>夫婦ハック</title>
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer=""></script>
-      <link rel="stylesheet" media="all" href="https://www.kyuzituhack.com/assets/application-ea885e098839eb102329be30b9e056274d82eb0e36ac33a6a7cc4205b4b86c38.css" async="async">
-      <link rel="stylesheet" href="public/css/style.css" async="async">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>夫婦わぷらす</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer=""></script>
+    <link rel="stylesheet" media="all" href="https://www.kyuzituhack.com/assets/application-ea885e098839eb102329be30b9e056274d82eb0e36ac33a6a7cc4205b4b86c38.css" async="async">
+
+    <script src="https://www.kyuzituhack.com/assets/application-c5481dc14693c36cc1daa3ec72e40bf37321c7961bb0c5be5b212d452f64e717.js" defer="defer"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/airbnb.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
 
-      <meta property="og:locale" content="ja_JP">
-      <meta property="og:site_name" context="夫婦ハック">
-      <meta property="og:title" context="あなたの休日を勝手に決めちゃいます！">
-      <meta property="og:description" context="休日ハックがあなたの休日を企画します！下調べや予約はお任せ！">
-      <meta property="og:type" context="website">
-      <meta property="og:url" context="">
-      <meta property="og:image" context="https://kyuzituhack.com/ogp_1200_630.png">
+
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
-  
-    <body ontouchstart="">
-      <header class="header">
-    <div class="header_logo">
-      <a href="hack.html"><img alt="休日ハック！" src="https://www.kyuzituhack.com/assets/logo_type_simbol_white-191d01481d9313facedbb9117de5ac56fefa82128fae50163cce96561ef20ef3.svg"></a>
-    </div>
+<body>
+  <header>
+    <img src="public/img/logo.png" alt="proto" class="logo"/>
   </header>
-      <main class="wrapper">
-        <section class="page">
-    <div class="page_body">
+  <main>
+    <div style="padding:20px;">
+      <div class="inputGroup">
+        <label class="inputGroup_label require" for="order_target_datetime">体験内容</label>
+        <p>互いの価値観を共有！家紋・家訓ワークショップ</p>
+      </div>
+      <div class="inputGroup">
+        <label class="inputGroup_label require" for="order_target_datetime">体験場所</label>
+        <p>新宿区西新宿1丁目1-1 西新宿タワー25F</p>
+      </div>
+      <div class="inputGroup">
+        <label class="inputGroup_label require" for="order_target_datetime">お名前(女性)</label>
+        <input type="text" placeholder="佐藤 花子" />
+      </div>
+      <div class="inputGroup">
+        <label class="inputGroup_label require" for="order_target_datetime">お名前(男性)</label>
+        <input type="text" placeholder="佐藤 太郎" />
+      </div>
+      <div class="inputGroup">
+        <label class="inputGroup_label require" for="order_target_datetime">メールアドレス</label>
+        <input type="text" placeholder="enman@example.com" />
+      </div>
+      <div class="inputGroup">
+        <label class="inputGroup_label require" for="order_target_datetime">日付</label>
+        <div class="inputGroup_input datetime_flatpicker">
+          <input required="required" id="target_datetime" type="text" name="order[target_datetime]" class="flatpickr-input" readonly="readonly"><div class="flatpickr-calendar animate inline" tabindex="-1"><div class="flatpickr-months"><span class="flatpickr-prev-month flatpickr-disabled"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><g></g><path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"></path></svg></span><div class="flatpickr-month"><div class="flatpickr-current-month"><select class="flatpickr-monthDropdown-months" aria-label="月" tabindex="-1"><option class="flatpickr-monthDropdown-month" value="2" tabindex="-1">3月</option><option class="flatpickr-monthDropdown-month" value="3" tabindex="-1">4月</option><option class="flatpickr-monthDropdown-month" value="4" tabindex="-1">5月</option><option class="flatpickr-monthDropdown-month" value="5" tabindex="-1">6月</option><option class="flatpickr-monthDropdown-month" value="6" tabindex="-1">7月</option><option class="flatpickr-monthDropdown-month" value="7" tabindex="-1">8月</option><option class="flatpickr-monthDropdown-month" value="8" tabindex="-1">9月</option><option class="flatpickr-monthDropdown-month" value="9" tabindex="-1">10月</option><option class="flatpickr-monthDropdown-month" value="10" tabindex="-1">11月</option><option class="flatpickr-monthDropdown-month" value="11" tabindex="-1">12月</option></select><div class="numInputWrapper"><input class="numInput cur-year" type="number" tabindex="-1" aria-label="年" min="2021"><span class="arrowUp"></span><span class="arrowDown"></span></div></div></div><span class="flatpickr-next-month"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><g></g><path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"></path></svg></span></div><div class="flatpickr-innerContainer"><div class="flatpickr-rContainer"><div class="flatpickr-weekdays"><div class="flatpickr-weekdaycontainer">
+    <span class="flatpickr-weekday">
+      日</span><span class="flatpickr-weekday">月</span><span class="flatpickr-weekday">火</span><span class="flatpickr-weekday">水</span><span class="flatpickr-weekday">木</span><span class="flatpickr-weekday">金</span><span class="flatpickr-weekday">土
+    </span>
+    </div></div><div class="flatpickr-days" tabindex="-1"><div class="dayContainer"><span class="flatpickr-day prevMonthDay flatpickr-disabled" aria-label="2月 28, 2021">28</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 1, 2021">1</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 2, 2021">2</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 3, 2021">3</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 4, 2021">4</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 5, 2021">5</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 6, 2021">6</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 7, 2021">7</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 8, 2021">8</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 9, 2021">9</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 10, 2021">10</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 11, 2021">11</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 12, 2021">12</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 13, 2021">13</span><span class="flatpickr-day today flatpickr-disabled" aria-label="3月 14, 2021" aria-current="date">14</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 15, 2021">15</span><span class="flatpickr-day flatpickr-disabled" aria-label="3月 16, 2021">16</span><span class="flatpickr-day " aria-label="3月 17, 2021" tabindex="-1">17</span><span class="flatpickr-day " aria-label="3月 18, 2021" tabindex="-1">18</span><span class="flatpickr-day " aria-label="3月 19, 2021" tabindex="-1">19</span><span class="flatpickr-day " aria-label="3月 20, 2021" tabindex="-1">20</span><span class="flatpickr-day " aria-label="3月 21, 2021" tabindex="-1">21</span><span class="flatpickr-day " aria-label="3月 22, 2021" tabindex="-1">22</span><span class="flatpickr-day " aria-label="3月 23, 2021" tabindex="-1">23</span><span class="flatpickr-day " aria-label="3月 24, 2021" tabindex="-1">24</span><span class="flatpickr-day " aria-label="3月 25, 2021" tabindex="-1">25</span><span class="flatpickr-day " aria-label="3月 26, 2021" tabindex="-1">26</span><span class="flatpickr-day " aria-label="3月 27, 2021" tabindex="-1">27</span><span class="flatpickr-day " aria-label="3月 28, 2021" tabindex="-1">28</span><span class="flatpickr-day " aria-label="3月 29, 2021" tabindex="-1">29</span><span class="flatpickr-day " aria-label="3月 30, 2021" tabindex="-1">30</span><span class="flatpickr-day " aria-label="3月 31, 2021" tabindex="-1">31</span><span class="flatpickr-day nextMonthDay" aria-label="4月 1, 2021" tabindex="-1">1</span><span class="flatpickr-day nextMonthDay" aria-label="4月 2, 2021" tabindex="-1">2</span><span class="flatpickr-day nextMonthDay" aria-label="4月 3, 2021" tabindex="-1">3</span><span class="flatpickr-day nextMonthDay" aria-label="4月 4, 2021" tabindex="-1">4</span><span class="flatpickr-day nextMonthDay" aria-label="4月 5, 2021" tabindex="-1">5</span><span class="flatpickr-day nextMonthDay" aria-label="4月 6, 2021" tabindex="-1">6</span><span class="flatpickr-day nextMonthDay" aria-label="4月 7, 2021" tabindex="-1">7</span><span class="flatpickr-day nextMonthDay" aria-label="4月 8, 2021" tabindex="-1">8</span><span class="flatpickr-day nextMonthDay" aria-label="4月 9, 2021" tabindex="-1">9</span><span class="flatpickr-day nextMonthDay" aria-label="4月 10, 2021" tabindex="-1">10</span></div></div></div></div></div>
+      </div>
+        <p class="attention mT16">※12/30 〜 1/3は選択できません</p>
+      </div>
   
-        <div class="content-centered">
-          <form action="/order/step02" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="9GIUdoEPTWgkpv0k6VAuC9cx6wDJEBmHnp7QsoB/1GfCdUJ9QeBBiJy+Ynu5uSrQduFCURH4xFMbSw9iIwFwyQ==">
-  
-            <div class="inputGroup">
-              <span class="inputGroup_label require">どんな休日にしたい？（複数選択可）</span>
-              <input type="hidden" name="order[goal_image_ids][]" value="">
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="reason-checkbox" required="" type="checkbox" value="1" name="order[goal_image_ids][]" id="order_goal_image_ids_1">
-                  </div>
-                  <label class="labelPair_label" for="order_goal_image_ids_1">達成感を味わいたい</label>
-                </div>
-  
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="reason-checkbox" required="" type="checkbox" value="2" name="order[goal_image_ids][]" id="order_goal_image_ids_2">
-                  </div>
-                  <label class="labelPair_label" for="order_goal_image_ids_2">ストレス発散したい、スッキリしたい</label>
-                </div>
-  
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="reason-checkbox" required="" type="checkbox" value="3" name="order[goal_image_ids][]" id="order_goal_image_ids_3">
-                  </div>
-                  <label class="labelPair_label" for="order_goal_image_ids_3">ワクワクしたい、ドキドキしたい</label>
-                </div>
-  
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="reason-checkbox" required="" type="checkbox" value="4" name="order[goal_image_ids][]" id="order_goal_image_ids_4">
-                  </div>
-                  <label class="labelPair_label" for="order_goal_image_ids_4">癒されたい、リラックスしたい</label>
-                </div>
-  
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="reason-checkbox" required="" type="checkbox" value="5" name="order[goal_image_ids][]" id="order_goal_image_ids_5">
-                  </div>
-                  <label class="labelPair_label" for="order_goal_image_ids_5">非日常を味わいたい</label>
-                </div>
-  
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="reason-checkbox" required="" type="checkbox" value="6" name="order[goal_image_ids][]" id="order_goal_image_ids_6">
-                  </div>
-                  <label class="labelPair_label" for="order_goal_image_ids_6">新たな人とのつながりが欲しい</label>
-                </div>
-  
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="reason-checkbox" required="" type="checkbox" value="7" name="order[goal_image_ids][]" id="order_goal_image_ids_7">
-                  </div>
-                  <label class="labelPair_label" for="order_goal_image_ids_7">何かに没頭したい</label>
-                </div>
-  
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="reason-checkbox" required="" type="checkbox" value="8" name="order[goal_image_ids][]" id="order_goal_image_ids_8">
-                  </div>
-                  <label class="labelPair_label" for="order_goal_image_ids_8">ロマンチックな気分に浸りたい</label>
-                </div>
+      <div class="inputGroup">
+        <span class="inputGroup_header require">時間帯</span>
+        <div class="horizontal">
+            <div class="labelPair">
+              <div class="labelPair_input">
+                <input required="required" type="radio" value="午前" name="order[time_zone]" id="order_time_zone_午前">
+              </div>
+              <label class="labelPair_label" for="order_time_zone_午前">午前</label>
             </div>
-  
-            <div class="inputGroup">
-              <span class="inputGroup_label require">どんな事がしたい？</span>
-              
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="genre-checkbox" required="" type="checkbox" value="1" name="order[genre_ids][]" id="order_genre_ids_1">
-                  </div>
-                  <label class="labelPair_label" for="order_genre_ids_1">モノづくり体験</label>
-                </div>
-  
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="genre-checkbox" required="" type="checkbox" value="2" name="order[genre_ids][]" id="order_genre_ids_2">
-                  </div>
-                  <label class="labelPair_label" for="order_genre_ids_2">エンタメ体験</label>
-                </div>
-  
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="genre-checkbox" required="" type="checkbox" value="3" name="order[genre_ids][]" id="order_genre_ids_3">
-                  </div>
-                  <label class="labelPair_label" for="order_genre_ids_3">癒し体験</label>
-                </div>
-  
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="genre-checkbox" required="" type="checkbox" value="4" name="order[genre_ids][]" id="order_genre_ids_4">
-                  </div>
-                  <label class="labelPair_label" for="order_genre_ids_4">アクティブ体験</label>
-                </div>
-  
-                <div class="labelPair column">
-                  <div class="labelPair_input">
-                    <input class="genre-checkbox" required="" type="checkbox" value="5" name="order[genre_ids][]" id="order_genre_ids_5">
-                  </div>
-                  <label class="labelPair_label" for="order_genre_ids_5">なんでもOK</label>
-                </div>
+            <div class="labelPair">
+              <div class="labelPair_input">
+                <input required="required" type="radio" value="午後" name="order[time_zone]" id="order_time_zone_午後">
+              </div>
+              <label class="labelPair_label" for="order_time_zone_午後">午後</label>
             </div>
-  
-            <div class="inputGroup">
-              <span class="inputGroup_header require">誰とハックされたい？</span>
-                <div class="labelPair">
-                  <div class="labelPair_input">
-                    <input required="required" type="radio" value="1" name="order[purpose_id]" id="order_purpose_id_1">
-                  </div>
-                  <label class="labelPair_label" for="order_purpose_id_1">一人で楽しむ</label>
-                </div>
-                <div class="labelPair">
-                  <div class="labelPair_input">
-                    <input required="required" type="radio" value="2" name="order[purpose_id]" id="order_purpose_id_2">
-                  </div>
-                  <label class="labelPair_label" for="order_purpose_id_2">デート</label>
-                </div>
-                <div class="labelPair">
-                  <div class="labelPair_input">
-                    <input required="required" type="radio" value="3" name="order[purpose_id]" id="order_purpose_id_3">
-                  </div>
-                  <label class="labelPair_label" for="order_purpose_id_3">友達と楽しむ（男性同士）</label>
-                </div>
-                <div class="labelPair">
-                  <div class="labelPair_input">
-                    <input required="required" type="radio" value="4" name="order[purpose_id]" id="order_purpose_id_4">
-                  </div>
-                  <label class="labelPair_label" for="order_purpose_id_4">友達と楽しむ（女性同士）</label>
-                </div>
-                <div class="labelPair">
-                  <div class="labelPair_input">
-                    <input required="required" type="radio" value="5" name="order[purpose_id]" id="order_purpose_id_5">
-                  </div>
-                  <label class="labelPair_label" for="order_purpose_id_5">友達と楽しむ（異性）</label>
-                </div>
-                <div class="labelPair">
-                  <div class="labelPair_input">
-                    <input required="required" type="radio" value="6" name="order[purpose_id]" id="order_purpose_id_6">
-                  </div>
-                  <label class="labelPair_label" for="order_purpose_id_6">友達と楽しむ（グループ）</label>
-                </div>
-                <div class="labelPair">
-                  <div class="labelPair_input">
-                    <input required="required" type="radio" value="7" name="order[purpose_id]" id="order_purpose_id_7">
-                  </div>
-                  <label class="labelPair_label" for="order_purpose_id_7">親子で楽しむ（子供と一緒に）※4歳児以上</label>
-                </div>
+            <div class="labelPair">
+              <div class="labelPair_input">
+                <input required="required" type="radio" value="夕方" name="order[time_zone]" id="order_time_zone_夕方">
+              </div>
+              <label class="labelPair_label" for="order_time_zone_夕方">夕方</label>
             </div>
-  
-            <div class="btn-l btn-w btn-primary">
-              <a href="step02.html">次へ</a>
-            </div>
-  
-  </form>      </div>
-      
+        </div>
+      </div>
+      <div class="btn-l btn-w btn-primary">
+        <a href="payment.html">次に進む</a>
+      </div>
+      <div class="btn-l btn-w btn-back">
+        <a href="event-detail_1.html">戻る</a>
+      </div>
     </div>
-  </section>
-  
-      </main>
+
+    <style>
+      .flatpickr-calendar:first-of-type{
+        display:none !important;
+      }
+    </style>
+  </main>
   <footer class="footer">
-    <nav class="footer_nav">
-      <ul class="footer_navLinks">
-        <li class="footer_navLink"><a href="/company">会社概要</a></li>
-        <li class="footer_navLink"><a href="/terms">利用規約</a></li>
-        <li class="footer_navLink"><a href="/privacy">プライバシーポリシー</a></li>
-        <li class="footer_navLink"><a href="/law">特定商取引法に基づく表示</a></li>
-        <li class="footer_navLink"><a href="https://forms.gle/6UbfCvnY8da6tMQp6">お問い合わせ</a></li>
-      </ul>
-    </nav>
-    <div class="footer_logo">
-      <a href="/"><img alt="休日ハック！" src="https://www.kyuzituhack.com/assets/logo_type_simbol_white-191d01481d9313facedbb9117de5ac56fefa82128fae50163cce96561ef20ef3.svg"></a>
+    <div class="footer_logo" style="width:300px; text-align:center;">
+      <a href="/index.html" style="color:#FFF; font-size:30px;">夫婦わぷらす</a>
     </div>
     <div class="footer_copyright">
-      <small>© 2020 Fufu Hack Co., Ltd.</small>
+      <small>© 2021 love machine Co., Ltd.</small>
     </div>
   </footer>
-    
-  
-  
-  </body></html>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="public/js/script.js"></script>
+
+</body>
+</html>
