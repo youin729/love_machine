@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>夫婦わぷらす</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="public/img/logo.png" alt="proto" class="logo"/>
+    <div id="navArea">
+      <nav>
+        <div class="inner">
+          <ul>
+            <li><a href="events.html">イベント一覧</a></li>
+            <li><a href="entry.html">会員登録</a></li>
+            <li><a href="login.html">ログイン</a></li>
+            <li><a href="company.html">主催者のかたへ</a></li>
+            <li><a href="admin.html">主催者むけページ</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="toggle_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="mask"></div>
+    </div>
+  </header>
+  <main>
+
+    <div class="profile">
+      <div class="woman">
+        <p class="icon">
+          <img src="public/img/icon_women.png" alt="女性アイコン" style="display: inline;">
+        </p>
+        <p class="profile">
+          あけみ
+        </p>
+      </div>
+      <div class="man">
+        <p class="icon">
+          <img src="public/img/icon_men.png" alt="男性アイコン" style="display: inline;">
+        </p>
+        <p class="profile">
+          ちゃき
+        </p>
+      </div>
+    </div>
+    <div id="analyzeWrap">
+      <h2 class="contentsTitle">
+        <span><i class="material-icons">auto_graph</i></span><p>価値観</p>
+      </h2>
+      <div>
+        <div class="chart-container">
+          <canvas id="myRaderChart" width="400" height="400" style="margin: 0 auto;"></canvas>
+        </div>
+      </div>
+    </div>
+    <div id="memberMailListWrap">
+      <h2 class="contentsTitle">
+        <span><i class="material-icons">&#xE158;</i></span><p>受信BOX</p>
+      </h2>
+      <ul class="mailList">
+        <li>
+          <a href="event-detail_1.html">
+            <div class="rows">
+              <div class="title">家紋・家訓ワークショップ</div>
+              <p>ご利用いただきありがとうございました。作成させていただいた家紋をお送りいたします。</p>
+              <time>3/18 09:00</time>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="event-detail_2.html">
+            <div class="rows">
+              <div class="title">生け花ギフト 小花</div>
+              <p>ご利用いただきありがとうございました。</p>
+              <time>3/18 09:00</time>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+<style>
+
+  #myRaderChart{
+    height:500px;
+  }
+  .icon {
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      width: 37px;
+      height: 37px;
+      overflow: hidden;
+  }
+  .icon img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: bottom;
+  }
+  .contentsTitle {
+    overflow: hidden;
+    position: relative;
+    border-bottom: solid 2px #F5568B;
+    color: #F5568B;
+    font-weight: bold;
+    height: 40px;
+    background: white;
+    background: -moz-linear-gradient(top, white 0%, #eff1f0 100%);
+    background: -webkit-linear-gradient(top, white 0%, #eff1f0 100%);
+    background: -o-linear-gradient(top, white 0%, #eff1f0 100%);
+    background: -ms-linear-gradient(top, white 0%, #eff1f0 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #eff1f0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eff1f0',GradientType=0 );
+}
+.contentsTitle span {
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}.contentsTitle p {
+    margin: 4px 0;
+    position: absolute;
+    top: 9px;
+    left: 40px;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+.mailList {
+    margin-top: 10px;
+}.mailList li {
+    padding: 0 5px 5px 5px;
+}.mailList a {
+    display: block;
+    border: solid 1px #E6E6E4;
+    padding: 5px;
+    color: inherit;
+}.mailList .title {
+    margin-bottom: 5px;
+    color: #F5568B;
+    font-size: 1.2rem;
+}.mailList p, .mailList time {
+    font-size: 1.1rem;
+}
+</style>
+
+  <footer class="footer">
+    <div class="footer_nav">
+      <ul class="footer_navLinks">
+        <li class="footer_navLink"><a href="/company">会社概要</a></li>
+        <li class="footer_navLink"><a href="/terms">利用規約</a></li>
+        <li class="footer_navLink"><a href="/privacy">プライバシーポリシー</a></li>
+        <li class="footer_navLink"><a href="/law">特定商取引法に基づく表示</a></li>
+        <li class="footer_navLink"><a href="https://forms.gle/6UbfCvnY8da6tMQp6">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div class="footer_logo" style="width:300px; text-align:center;">
+      <a href="/index.html" style="color:#FFF; font-size:30px;">夫婦わぷらす</a>
+    </div>
+    <div class="footer_copyright">
+      <small>© 2021 love machine Co., Ltd.</small>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="public/js/script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  <script>
+    var ctx = document.getElementById("myRaderChart");
+    var myRadarChart = new Chart(ctx, {
+        type: 'radar', 
+        data: { 
+            labels: ["ラブ", "育児", "家事", "仕事", "お金"],
+            datasets: [{
+                label: 'ちゃき',
+                data: [9, 7, 6, 9, 8],
+                backgroundColor: 'RGBA(115,255,25, 0.5)',
+                borderColor: 'RGBA(115,255,25, 1)',
+                borderWidth: 1,
+                pointBackgroundColor: 'RGB(46,106,177)'
+            }, {
+                label: 'あけみ',
+                data: [7, 9, 8, 8, 7],
+                backgroundColor: 'RGBA(225,95,150, 0.5)',
+                borderColor: 'RGBA(225,95,150, 1)',
+                borderWidth: 1,
+                pointBackgroundColor: 'RGB(46,106,177)'
+            }]
+        },
+        options: {
+            scale:{
+                ticks:{
+                    suggestedMin: 0,
+                    suggestedMax: 10,
+                    stepSize: 2,
+                    callback: function(value, index, values){
+                        return  value
+                    }
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>
