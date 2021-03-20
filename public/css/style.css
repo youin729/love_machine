@@ -574,3 +574,40 @@ steps
 .footer_navLink a {
   color:#FFF !important;
 }
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding: 10px 0 20px;
+}
+.bx-wrapper .bx-pager .bx-pager-item {
+  display: inline-block;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #CCC;
+  text-indent: -9999px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 0 10px;
+  outline: 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.caption{
+  text-align:center;
+  font-size:12px;
+  color:#3333FF;
+  text-decoration:underline;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #f3aad2;
+}
+.contentsTitle{
+  border-left:3px solid #ff66a9;
+  padding-left:5px;
+  margin-bottom:5px;
+}
